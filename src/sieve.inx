@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<inkscape-extension xmlns="http://www.inkscape.org/namespace/inkscape/extension">
+    <_name>Sieve</_name>
+    <id>com.fourpeaksstudios.sieve</id>
+    <dependency type="executable" location="extensions">sieve.py</dependency>
+    <dependency type="executable" location="extensions">inkex.py</dependency>
+    <param name="area" type="float" min="0.0" max="10000.0" _gui-text="Area (px):">1.0</param>
+    <effect>
+        <object-type>all</object-type>
+        <effects-menu>
+            <submenu _name="Filter"/>
+        </effects-menu>
+    </effect>
+    <script>
+        <command reldir="extensions" interpreter="python">sieve.py</command>
+    </script>
+</inkscape-extension>
